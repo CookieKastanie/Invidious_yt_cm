@@ -1,16 +1,23 @@
 {
     "manifest_version": 3,
     "name": "Invidious YT Context Menu",
-    "description": "Sur Youtube, ajoute un bouton dans le menu contextuel pour ouvrir une vidéo dans une instance Invidious.",
-    "version": "1.0",
+    "description": "Sur Youtube, ajoute un bouton dans le menu contextuel pour continuer la navigation dans une instance Invidious.",
+    "version": "0.0.1",
     "icons": {
+        "16" : "icon16.png",
+        "32" : "icon32.png",
+        "48" : "icon48.png",
         "128" : "icon128.png"
     },
     "permissions": [
+        "contextMenus",
         "tabs",
-        "contextMenus"
+        "storage"
     ],
     "background": {
         "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
     }
 }

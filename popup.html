@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Invidious YT Context Menu</title>
+    </head>
+    <style>
+        html {
+            height: fit-content;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+            height: fit-content;
+        }
+
+        label {
+            user-select: none;
+        }
+
+        input[type=text] {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 200px;
+            padding: 5px 5px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+    <body>
+        <label for="url">Url de l'instance :</label>
+        <input id="url" type="text">
+        <script src="./popup.js"></script>
+    </body>
+</html>
